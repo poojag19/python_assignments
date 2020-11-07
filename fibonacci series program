@@ -1,0 +1,23 @@
+# Program for Fibonacci series upto given number term ...
+number = int(input("how many terms required? "))
+# settig up first two terms ...
+n1, n2 = 0, 1
+# initializing the increment count ...
+count = 0
+# check the required number of term is positive or not? ...
+if number <= 0:
+  print("Please input only positive integer")
+elif number == 1:
+  print("Fibonacci seriese are :- ")
+  print(n1)
+else:
+  print("Fibonacci seriese are :- ")
+  while count < number:
+    print(n1)
+    nextnumber = n1 + n2
+    # update values position each time ...
+    n1 = n2
+    n2 = nextnumber
+    # looping the increment count ... 
+    count += 1
+# Program Ends Here...
