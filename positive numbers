@@ -1,0 +1,14 @@
+# This is my 2nd program to print all positive numbers from a given range
+# getting range start number and ending numbers
+sn = int(input("Enter starting number of your range... :-  " ))
+en = int(input("Enter ending number of your range... :-  " ))
+""" checking start and ending numbers are postive or not
+if not positive ask to enter correct positive numbers
+if positive then print all numbers within that range"""
+if ((sn or en) <= 0):
+  print ("Please input only positive numbers...")
+else:
+  print("All Positive numbers within the given range are :- ")
+  for number in range(sn, en + 1): 
+    print(number) 
+# Program ends here
