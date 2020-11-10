@@ -1,0 +1,28 @@
+# Python program to print positive Intiger Numbers from a List 
+
+# Preparing a list from user as input list
+
+lst = [] # creating an empty list 
+  
+# number of elemetns as input 
+n = int(input("Enter number of elements : ")) 
+  
+# iterating till the range 
+for i in range(0, n): 
+  ele = int(input()) 
+  # adding the element
+  lst.append(ele)
+print(lst)
+strlst=(str(lst))
+mystr=("The given user input list is " + strlst)
+print(mystr)
+
+# iterating each number in list
+flst = []
+for num in lst: 
+  # checking condition 
+  if num >= 0:
+    flst.append(num)
+myfstr=("The Postitive integers from given user input is " + (str(flst)))
+print(myfstr)
+#program ends here
