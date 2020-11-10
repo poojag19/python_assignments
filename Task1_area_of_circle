@@ -1,0 +1,9 @@
+#This is Task1 program for calculating area of circle and print with 2 decimal place accuracy. 
+import math
+radius = float(input("Enter the Radius of the circle..."))
+if radius <= 0:
+    print ("Please input valid value for radius...")
+else:
+    area = (math.pi * radius**2)
+    area = ("%.2f" %area)
+    print("The area of the circle having radius " + str(radius) + " unit is = " + str(area) + " sq.units")
