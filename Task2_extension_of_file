@@ -1,0 +1,33 @@
+"""This is Task2 program To accept a filename from the user and print
+the extension of that file."""
+# program starts here....
+filename=input("Enter the full filename with extension...")
+if filename=="":
+    print ("Please Enter valid file name....")
+else:
+    filename=(filename.lower())
+    flen = len(filename)
+    ip=filename.index(".")
+    ext=filename[(ip+1): flen:]
+if ext=="py" :
+   dext="Python File.."
+elif ext=="txt" :
+     dext="Text File.."
+elif ((ext=="htm") or (ext=="html")) :
+     dext="Hypertext Markup Language File.."
+elif ext=="pdf" :
+     dext="Portable Document File.."
+elif ext=="ppt" :
+     dext="Microsoft Powerpoint File.."
+elif ((ext=="doc") or (ext=="docx")) :
+     dext="Microsoft Word Document File.."
+elif ext=="dwg" :
+     dext="Autocad Drawing File.."
+elif ext=="bmp" :
+     dext="Windows Bitmap image File.."
+elif ((ext=="jpg") or (ext=="jpeg")) :
+     dext="Joint Picture Group JPEG or JPG File.."
+else :
+     dext="Except Python, Word, Text, HTML, PDF, DWG, BMP, JPG, Powerpoint files, something else..."
+print("The given file name has Extension of " + dext)
+#Program ends here...
